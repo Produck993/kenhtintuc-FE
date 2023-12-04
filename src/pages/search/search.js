@@ -1,4 +1,13 @@
-import Box, { Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Paper } from "@mui/material";
+import Box, {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Container,
+  Grid,
+  Paper,
+} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
@@ -116,17 +125,15 @@ export default function Search() {
                     >
                       {card?.attributes.top_title || ""}
                       <Button
-                          size="small"
-                          onClick={() => navigate(`/details/${card.id}`)}
-                        >
-                          Đọc tiếp...
-                        </Button>
-                        <div>{card?.attributes.author}</div>
+                        size="small"
+                        onClick={() => navigate(`/details/${card.id}`)}
+                      >
+                        Đọc tiếp...
+                      </Button>
+                      <div>{card?.attributes.author}</div>
                     </Typography>
                   </CardContent>
-                  <CardActions>
-    
-                  </CardActions>
+                  <CardActions></CardActions>
                 </Card>
               </Grid>
             ))}

@@ -185,33 +185,7 @@ export default function Home() {
                   </Grid>
                 ))}
               </Grid>
-
-              {/* {pageInfo.map((card, idx) => {
-                return (
-                  <Card
-                    sx={{
-                      height: "100%",
-                    }}
-                  >
-                    <CardMedia
-                      component="div"
-                      height="100%"
-                      image={`${process.env.REACT_APP_IMAGE_URL}${card?.attributes.img_cate?.data?.attributes.url}`}
-                    />
-                    <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography gutterBottom variant="h5" component="h2">
-                        Heading
-                      </Typography>
-                      <Typography>
-                        This is a media card. You can use this section to
-                        describe the content.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                );
-              })}` */}
             </Box>
-            {/* End hero unit */}
           </Container>
         </Paper>
         {/* Box */}
