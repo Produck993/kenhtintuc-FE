@@ -11,7 +11,7 @@ import qs from "qs";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { Box, Grid, Paper } from "@mui/material";
 import moment from "moment/moment";
-export default function Mobile() {
+export default function Category() {
   const [pageInfo, setPageInfo] = useState([]);
   const [topView, setTopView] = useState([]);
   const navigate = useNavigate();

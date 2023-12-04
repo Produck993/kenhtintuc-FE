@@ -1,13 +1,11 @@
-import { BrowserRouter, Route, Routes, createBrowserRouter } from "react-router-dom";
-
-import Home from "../pages/home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../component/header/header";
 import Footer from "../component/footer/footer";
 import Blog from "../pages/home";
 import { CssBaseline } from "@mui/material";
 import Detail from "../pages/detail-page/detail";
-import Mobile from "../pages/mobile";
 import Search from "../pages/search/search";
+import Category from "../pages/category";
 export default function RouterDom() {
   return (
     <BrowserRouter>
@@ -16,7 +14,7 @@ export default function RouterDom() {
         <Routes>
             <Route path="/" element={<Blog/>}/>   
             <Route path="/details/:id" element={<Detail/>}/>   
-            <Route path="/:slug" element={<Mobile/>}/>   
+            <Route path="/:slug" element={<Category/>}/>   
             <Route path="/search/:key" element={<Search/>}/>  
  
         </Routes>
